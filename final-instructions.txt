@@ -1,0 +1,578 @@
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+The final project for CSCI1450 applies what we have learned this semester to
+create a professional website. We will work on the final project over three
+weeks of class:
+Lab 13: Design the header, nav, footer, and create the home page
+Lab 14: Create and design three additional pages for the website and publish
+Final Project: Final Design and Checklist
+Final Project Steps
+Here are some links to help you navigate within these instructions:
+Final Project Specifications
+Lab 13
+Step 1. Decide on a final project
+Step 2. Retrofit Bootstrap/Font Awesome
+Step 3. Add your logo
+Step 4. Choose four pages and create navigation
+Step 5. Style the navigation
+Step 6. Create and style the website footer.
+Step 7. Copy Everything Except the <main> Section
+Step 8. Design home page.
+Lab 14
+Step 9. Create and design your other pages
+●
+Resume Page
+●
+Videos Page
+●
+Portfolio Page
+●
+Contact Page:
+●
+JavaScript Game
+Step 10. Publish your final project
+Github Hosting Written Instructions
+Final Project (Step 11)
+Final Project Checklist
+●
+●
+1
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Final Project Specifications:
+Content. The final project must have
+at least four pages. The home page
+must have three Bootstrap rows. The
+other pages need to have enough
+content to fill a page so that you have
+to scroll to see the footer. All content
+must be true for you.
+Coding. The website must be
+hand-coded using the code we
+learned in class, although you may add
+features you find on the Internet if you
+give recognition to the developer. You
+may not start the final project with a
+template you find online. See the
+checklist to help you meet the coding
+standards.
+Responsive. Your website, including
+the Javascript game if you choose to
+use it, must work on all size devices.
+Bootstrap columns are used to
+organize everything in the <main>
+section of all pages, except the game
+page.
+Final Project Checklist
+See the full specifications in the final
+project checklist. You will turn in the
+Final Project Checklist with your Final
+Project.
+2
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 1: Choose Final Project
+For your final project, you can either continue work on your portfolio, or you
+can create a new website for something of interest to you or perhaps for a
+family business.
+Option 1. Portfolio. If you are going to use your portfolio project for your final
+project, then continue to use the same set of files. Most students choose to
+build on their portfolio website, because then you can start with the work on
+it from Labs 9 and 10.
+Option 2. Another Website. Some students choose to make a website for a
+family business or personal interest. The website must be a real website with
+real content. For example, you may not create a pretend store that doesn't not
+actually sell products. If you are planning to make a different website for the
+final project, start by duplicating your website template folder. You will need
+to purchase a domain for your website for around $20. (I'll provide you with
+free hosting.)
+3
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 2. Retrofit Bootstrap/Font Awesome
+If you are going to use your portfolio website, you need to retrofit your
+portfolio website with Font Awesome and Bootstrap. (If you are creating a
+brand new website, then you will already have Bootstrap installed by copying
+your template.)
+CSS stylesheets for the HTML <head> for Font Awesome and Bootstrap
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+Be sure to put these stylesheet above your style sheet in the head
+Add these JavaScript files between </footer> and </body> at the end of the
+html
+<!--jQuery, Popper, and Bootstrap Javascript files-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+4
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 3. Add your Logo
+In working through the Module 13 slideshow,
+you created a logo. Now it is time to install
+the logo. If you skipped the step of making a
+logo, go back to Module 13 and make one
+now.
+Note: Creating and installing a logo is a requirement for Lab 13. However, you
+are not required to keep your logo in your website for your final project. You
+also may consider other tools to make a different logo for your final project.
+Move your logo into the images folder. Give it a good name, like logo.png
+Here is the <img> code:
+<header>
+</header>
+<img src="images/logo.png" alt="logo" height="XXX" width="XXX" class="img-fluid logo">
+Note that in the code above, there are two class attributes: img-fluid (from
+Bootstrap) and logo. The purpose of the logo class is to give you a way to style
+the logo.
+Be sure to change the <img> height and width to your height and width of
+your logo. You may find your logo is too large, in which case you can resize it
+to a smaller size with the max-width property, eg. max-width: 300px.
+Remember that the header can't be more than 2 inches total.
+If you want to center the logo:
+.logo{
+margin: 0 auto;
+display:block;
+}
+5
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 4: Choose Four Pages and Create Navigation
+Make a decision on the HTML pages for your final project, and change the
+navigation to those pages. I recommend limiting your website to four pages
+so that your navigation will work on mobile devices. If you want more than 4
+pages, then see the optional Bootstrap navigation bar later in this slide show.
+If you are making a portfolio website, you can choose from these pages. Some
+of the pages below have additional instructions and ideas in this document.
+1. 2. 3. 4. 5. 6. 7. Resume Page: A designed resume page with markup
+Portfolio Page: A page with links to your Groove Guitars, Puppies
+and/or Animal Photography websites. You can also include artwork that
+you created in other classes.
+Gallery Page: Photo gallery page with your own photography or photos
+that are important to you. Photos must be royalty-free or your own
+photos. For example, you could make a photo gallery of photos from a
+recent vacation using the code we used in the Animal Photography
+website.
+Contact Page: A page that provides information about how to contact
+you. If you would like a contact form, use an online tool to create a form,
+like Jotform or Google Forms. You could also include a map to your
+school. The contact page can be one of the easier choices for a page.
+Videos or Songs Page: Make videos? You could make a page to display
+your videos. As an alternative you could create a curated list of videos or
+even a curated list of Soundcloud songs.
+Game Page: The JavaScript game we made in Lab 10. If you choose to
+include the game in your final project, you must do the additional
+work to make it responsive. I have provided detailed instructions. If
+you are not comfortable with coding, you may find the instructions a bit
+challenging.
+List of Projects. Create a detailed list of projects you have worked on,
+including details on the languages used for each project. Include class
+projects on your list.
+After you choose your pages:
+6
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+●
+●
+Copy the index.html file to create new pages as necessary
+Add the navigation to your home (index.html) page. For now, you may
+want to place the navigation only on your home page. We will copy it to
+the other pages in a later step.
+7
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 5. Style the Navigation
+●
+●
+Choose nav bar colors to match with your web design and your logo. Be
+sure to change not only the background color but also the link colors.
+Check to make your link colors are clearly visible in all states.
+Keep the navigation and header fairly short--less than 2 inches. This is
+important because it appears on every single page, and you want
+plenty of space left to let the website visitor know what each page is
+about.
+If your logo is too large, resize your logo so that your navigation is under two
+inches with the max-width property.
+Optional Nav Bar Options:
+The Right Navigation Option
+This is a very common website style, because it uses less space.
+Step 1: Float your header img to the left, and add some margin if necessary.
+Step 2: Move your navigation list (nav ul) to the right side with text-align, and
+add some padding so it is vertically centered.
+8
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+If you have more than 4 pages on your
+website…
+…Then you need a way to make your website
+navigation responsive. One way to do it is how
+we did it in Lab 6 with media queries.
+Another way is to use the Bootstrap navigation.
+See the following slide for instructions on how to
+do that.
+The Bootstrap Nav Bar Option
+The Bootstrap navigation is a more complex
+menu, and uses JavaScript to display a
+hamburger menu for mobile. It also has built-in
+code for dropdown menus.
+●
+Hamburger Menu on Mobile
+●
+Dropdown Menu styles
+The instructions to make a Bootstrap Nav Bar
+are in a separate slideshow:
+Bootstrap Navigation Instructions
+9
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 6. Create and Style the Website Footer
+Adding a professionally designed footer is a great way to fill out web pages
+and make your website more professional in appearance. Choose colors for
+your footer that match your logo and nav bar. The footer colors must be full
+width. Here is a suggested design for the footer:
+●
+●
+●
+●
+The website footer must be the same on all pages of the website.
+The footer must be full width
+You may want to copy the website footer you made in Lab 11 or 12 to this
+website to get it started.
+All links need to work and must go to your social media pages. For
+example, if you have a link on your website to Github, it should link to
+your Github page. Place the <a> tags around both the icon and the text,
+like this:
+<a href="https://www.linkedin.com/in/metoxen/" target="
+blank">
+_
+<h4><i class="fa fa-linkedin-square" aria-hidden="true"></i>Connect on LinkedIn</h4>
+</a>
+Remember that an email link looks like this: <a href="mailto:me@myemailaddress.com">Email Me</a>
+"What links should I put in the footer?"
+Use icons that are professional, like the following:
+●
+Twitter
+●
+LinkedIn
+●
+Github
+●
+Bluesky
+●
+Twitch
+●
+Email Address
+10
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Avoid using personal links, like Facebook or Instagram, unless you have a
+public presence.
+You may need new icons. If so, grab them at
+https://fontawesome.com/v4/icons/
+Styling the Footer
+You may style the footer however you would like, as long as the design has a
+professional appearance and is equivalent in content and complexity to the
+footer shown above.
+Here is the HTML I used to make the sample footer.
+Note that I added three classes to make this work.
+.footer1000 - I added this class in order to be able to apply a max-width of
+1000px (and margin: 0 auto) to the content of the footer but not to the footer
+itself. That gives me full width on the color, but keeps the content in the
+center.
+.footer-icons - I added this class for styling for the icons in the footer. (Another
+option would be to select footer .fa.)
+.footer-bottom - I added this class so I could give the bottom footer a
+different
+color.
+11
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 7. Copy Everything Except the <main> Section
+Now that you have finished designing your header, nav, and footer, it is time
+to copy your improved code to your three other pages. Remember that on a
+website the only thing that varies page to page is the <main> section. So a
+nice shortcut is to copy over everything except for the main section to the
+other pages.
+Click on all of your navigation links to make sure that they work.
+Note: If you are going to use the JavaScript game as one of your four pages,
+then you need to make sure you have the JavaScript onload script in your
+<body>
+, like this: <body onload="startGame()">.
+12
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Step 8. Design Home Page
+For your home page, you should have
+at least three Bootstrap rows of
+content. On the example at right
+there are four rows.
+1. Hero image: In the example, I used
+a CSS background image with a
+drawing of Sharp Toes in an
+embedded <img> above it. This
+would be a great look if you can safely
+share a photo of yourself on the
+Internet.
+2. About Me Row: You probably
+already have this from your work on
+the portfolio website (Lab 9). If you
+use this row, change it to Bootstrap
+Columns. (Eg. two columns of
+col-sm-6)
+3. Navigational Row with icons: This
+is a navigational row using font
+awesome icons and Bootstrap
+columns. This is a common design for
+websites. You can link to your other
+three pages.
+4. Photo gallery. Note that with some
+CSS changes I move the thumbnails
+to the right. (It isn't necessary to do
+that if you include a photo gallery on
+your home page.)
+13
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
++++++++++++++++++++STOP HERE FOR LAB 13++++++++++++++++++++++++
+14
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Lab 14
+Last week you designed your header, navigation and footer as well as your
+home page. You also chose the pages you planned to include in your final
+project.
+This week you will:
+●
+Incorporate the feedback from last week's lab
+●
+Design the other three pages for your website using Bootstrap columns
+(Step 9)
+●
+Publish your website to Github or to your domain (Step 10)
+Step 9. Create and design your other pages
+Each page of your website needs to include a full page of content.. All content
+in the <main> section must be in Bootstrap columns, with the exception of
+the Video Game Page.
+Click on the links below that apply to the web pages you have chosen for
+detailed instructions. Not all of these may apply to your website.
+Resume Page : Instructions on how to design your resume page so the text width is less than
+5 inches.
+Videos Page: Instructions on how to make a videos page, with a refresher on how to use the
+video embeds, so that videos work responsively.
+Portfolio Page: Instructions on how to make a portfolio page.
+Contact Page: Instructions on how to make a Contact Page.
+JavaScript Game: Instructions on how to make the JavaScript Game responsive, which is
+required if you keep it in your final project.
+Step 10. Publish your final project
+Publish your final project to Github or to your domain. See the Module 14 slideshow
+for instructions on how to publish to your domain as well as a video on how to
+publish to Github.
+Github Hosting Written Instructions
+15
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Resume Page
+The resume page needs additional
+styling so that the text isn't more than 5
+inches across.
+On the Sharp Toes website, I made the
+resume look like a piece of paper. I also
+used a narrower width on the main
+section and added padding similar to
+what would be used on a paper
+document.
+Feel free to make your own design, but
+some sort of design work is required to
+avoid the problem of text that is too
+wide to comfortably read. Another
+option may be to set up the resume in
+two columns, or to add an appropriate
+photo to the resume.
+16
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Videos Page
+Adding a videos page to your final project is an easy option for one of your
+pages. . The videos you choose must fit the website. For example, if you are
+making a portfolio website, you could include a page of videos you either
+made or even a curated list of videos.
+A curated list of videos needs explanation as to how they fit into the curated
+list. For example, if you are a musician, you could make a curated list of videos
+of musicians that have influenced you. You need to explain to your website
+visitor why you added each video to your curated list .
+Embedding videos is a great way to fill out your website; however, videos are
+not responsive, and they need to be set up with code to make them
+responsive.
+Here is the Flaviocopes Instructions:
+https://flaviocopes.com/responsive-youtube-videos/
+17
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Portfolio Page
+You can use the Groove Guitars, Puppies and Animal Photography websites as
+examples of your work. Include work from other courses as well, if you like.
+Before you publish the website, you place the puppies and animals websites
+into a folder on your primary
+website, like this:
+portfolio
+index.html
+style.css
+portfolio.html
+puppies
+index.html
+style.css
+images
+animals
+index.html
+style.css
+images
+Until now, we have kept your other
+websites in the websites folder. The
+reason we need to move the other
+website folders into the portfolio
+folder at this stage is so that you
+can publish them in relation to
+your portfolio project and link to
+them accordingly.
+To add photos of your projects, take
+a screenshot of your webpage. Try
+to make the screenshots the same
+aspect ratio. To make a screenshot, use Command Shift 4 on a Mac and the
+Snip tool on windows.
+18
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+To make the image into a link, you need to correctly reference the two
+websites. The code looks like this:
+<a href="puppies/index.html">
+<img src="images/puppies.png" alt ="" height="" width="" class="img-fluid">
+</a>
+19
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Contact Page
+A contact page can be one of the easier choices. A contact page requires
+server-side programming; however, you can make a Contact Form with
+Google forms or Jotform, using their technology for the backend.
+To embed the form, you can either grab the embed code from the website, or
+you can place your contact form into an <iframe>
+.
+The trick to using a contact form on your website is to set the height and
+width of the iframe to make it large enough to display your entire form. If you
+do not do that, then you will see scroll wheels, which isn't a good experience
+for your website visitor. 100% width usually handles the horizontal size.
+The contact page must be fully designed, with additional information on how
+to reach you and perhaps icons and/or a photo. Here is the contact page I
+made for White Buffalo Websites:
+20
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+JavaScript Game
+The game we made in Lab 10 only works on desktop. If you use the JavaScript
+game in your final project, you MUST complete this extra work to make the
+game responsive.
+There are six steps to making the game responsive:
+1. Review the Problems
+Check your game at a mobile size. Here are the
+problems you need to repair:
+Problem 1: The JavaScript game uses a canvas of a
+fixed size, 640 x 360 pixels. 640 is too wide for mobile
+devices. This throws off your overall layout on mobile.
+(See screenshot at right.)
+Problem 2: The flap wings button doesn't respond on
+mobile, because it uses "onmouseup" and
+"onmousedown"
+. On mobile, you need to use
+"ontouchstart" and "ontouchend"
+.
+2. Change the Canvas Size
+Change the canvas size on mobile to a variable for the
+height and width. Insert this code near the variables at the top of the <script>
+tag:
+/* Add variables for the height and width */
+var canvasWidth = 640;
+var canvasHeight = 360;
+/*Test to see if I have a screen less than 768 pixels and if so,
+change the canvas size */
+if (window.innerWidth < 768){
+canvasWidth = 300;
+canvasHeight= 300;
+}
+21
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+3. Place canvas size variables
+Change the canvas size on mobile to a variable for the height and width
+Find these two lines, remove the height and width and change it to your
+variables.
+this.canvas.width = canvasWidth;/*Changed the number variable */
+this.canvas.height = canvasHeight;/*Changed the number variable */
+4. Make buttons work on mobile
+Change the buttons JavaScript for mobile by creating
+two versions of the buttons, one for mobile and one
+for desktop.
+<!--There are two versions of controls...one for desktop
+that uses a mouse and one for mobile devices The desktop
+has the desktop class and the mobile has the mobile
+class-->
+<div class="game-controls desktop">
+<button class="myButton"
+onmousedown="accelerate(-0.2)"
+onmouseup="accelerate(0.05)">FLAP WINGS</button>
+<a href="" ><button class="myButton">PLAY
+AGAIN</button></a>
+</div>
+<div class="game-controls mobile">
+<button class="myButton"
+ontouchstart="accelerate(-0.2)"
+ontouchend="accelerate(0.05)">FLAP WINGS</button>
+<a href="" ><button class="myButton">PLAY
+AGAIN</button></a>
+</div>
+5. Switch buttons
+Add CSS to make the buttons appear and disappear
+with media queries:
+/* JavaScript Game changes for mobile */
+.mobile{
+display:none;
+}
+@media only screen and (max-width: 768px){
+.desktop{
+22
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+display:none;
+}
+}
+.mobile{
+display: block;
+touch-action: manipulation;
+}
+6. Game Play Tweaks
+In addition, you may want to make additional changes to make the game
+play easier on mobile. Here are some changes I made on the Sharp Toes
+game for both mobile and desktop:
+●
+I felt the game play was too difficult on mobile, so I made the yellow
+square smaller
+●
+I moved the location of the score so that it would appear on mobile.
+●
+Note that you need to play the mobile version on an actual mobile
+device…the mouse is still in play on Chrome Inspector. You'll be able to
+test the mobile version in action once you publish it on Github and view
+it from your phone.
++++++++++++++++++++++++End of Lab 14+++++++++++++++++++++++++++++++++
+23
+Final Project Instructions
+Labs 13, 14, and the Final Project for CSCI1450
+Final Project Checklist
+Step 11. Complete your final design, work through the checklist and make any
+necessary corrections, and republish the website.
+Incorporate feedback from the grading process into your website.
+Begin work on the Final Project Checklist, making necessary changes to your
+website. It is probably easiest to print the checklist if you have access to a
+printer, and then take a photo of the completed checklist. If you don't have
+access to a printer, make a copy of the checklist in Google Drive and mark
+each item as it is completed.
+Final Project Checklist
+24

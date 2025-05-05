@@ -1,0 +1,225 @@
+/* Main Styles for Final Project Website */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header, Navigation and Logo Styles */
+header {
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007ACC;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+main {
+    padding: 30px 0;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #007ACC;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    clear: both;
+}
+
+.footer1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-icons {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007ACC;
+}
+
+footer h4 {
+    margin: 10px 0;
+}
+
+/* Resume Page Styling */
+.resume-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Portfolio Page Styling */
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Page Styling */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007ACC;
+}
+
+iframe.contact-form {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* JavaScript Game Styles */
+canvas {
+    border: 1px solid #d3d3d3;
+    background-image: url('images/mountains.jpg');
+    background-size: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+.game-controls {
+    text-align: center;
+    margin: 10px;
+}
+
+.myButton {
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.myButton:hover {
+    background-color: #005A99;
+}
+
+/* Mobile Responsive Game Controls */
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+        touch-action: manipulation;
+    }
+    
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}

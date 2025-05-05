@@ -1,0 +1,145 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+}
+
+/* Website Links except the nav */
+a:link{
+    color: sandybrown;
+}
+a:visited {
+    color: lightsteelblue;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: black;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: black; 
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+   list-style-type: none;
+   text-align: center;
+   margin: 8px 0;
+   padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a:link{
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: gray;
+}
+nav a:active {
+    color: lightgray;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+<body>
+ /* Hero section wrapper (optional, if you’re using a <section> or <div>) */
+#hero {
+  max-width: 1200px;     
+  margin: 0 auto;        
+  overflow: hidden;       
+  padding: 1rem;
+}        
+
+/* The image itself */
+#hero img {
+  display: block;                  
+  width: 100%;                        
+  border: 5px solid #fff;             
+  border-radius: 12px;                
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);  
+  transition: transform 0.3s ease;    
+}
+
+/* Optional hover effect */
+#hero img:hover {
+  transform: scale(1.02);            
+}
+
+/* Footer */
+footer {
+    border-top: purple 3px solid;
+    text-align: center;
+}
+.fa{
+    font-size: 8em;
+    color: #5751b0;
+}
+/* CSS without a media query--applies to all size unless overridden*/
+h1{
+    font-size: 4em;
+}
+
+/* Responsive Design - Tablets */
+
+/* Hero Image Styling */
+.hero-image {
+    border: 5px solid #551461;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+/* Gallery Styling */
+#gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+#gallery .thumbnails img {
+    width: 150px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#gallery .thumbnails img:hover {
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Responsive Design - Smartphones */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+

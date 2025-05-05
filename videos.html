@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated collection of web development tutorial videos selected by Mahamud Ali to showcase valuable learning resources.">
+    <title>Mahamud Ali Portfolio :: Videos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap and Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Responsive Video Container Styles */
+        .video-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        
+        .video-container::after {
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            display: block;
+            content: '';
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .video-card {
+            margin-bottom: 40px;
+        }
+        
+        .video-description {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Mahamud Ali Logo" height="80" width="200" class="img-fluid logo">
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Web Development Learning Resources</h2>
+                    <p class="text-center mb-5">This is a curated collection of web development tutorial videos that have been particularly helpful in my learning journey. These videos showcase essential skills and concepts I've applied in my projects.</p>
+                </div>
+            </div>
+            
+            <!-- First row of videos -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>HTML & CSS Crash Course</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/hu-q2zYwEYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>This comprehensive tutorial helped me understand the fundamentals of HTML and CSS, which are the building blocks of every website I create. The step-by-step explanation made it easy to follow along and practice the concepts.</p>
+                            <p><strong>Key concepts covered:</strong> HTML structure, CSS styling, responsive design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>JavaScript Fundamentals</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>This JavaScript tutorial was instrumental in helping me develop the interactive game on my portfolio. It explains core concepts in a clear and concise manner, making JavaScript accessible even for beginners.</p>
+                            <p><strong>Key concepts covered:</strong> Variables, functions, DOM manipulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second row of videos -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>Bootstrap 4 Tutorial</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/hnCmSXCZEpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>Bootstrap has been essential for creating responsive layouts on all my websites, including this portfolio. This tutorial taught me how to implement the grid system that I've used throughout this site to create responsive columns.</p>
+                            <p><strong>Key concepts covered:</strong> Grid system, responsive classes, Bootstrap components</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>Creating a Responsive Navigation Menu</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/gXkqy0b4M5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>Navigation is a critical component of any website. This tutorial helped me understand how to create a navigation system that works well on both desktop and mobile devices, which I've implemented on this portfolio.</p>
+                            <p><strong>Key concepts covered:</strong> Mobile-first design, hamburger menu, CSS transitions</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            
+            <!-- Third row of videos -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>Game Development with JavaScript</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/4q2vvZn5aoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>This tutorial was particularly helpful when developing the JavaScript game for my portfolio. It covers key concepts like collision detection and game physics that I applied in my own game development process.</p>
+                            <p><strong>Key concepts covered:</strong> Game loops, collision detection, canvas drawing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <h3>Web Design Principles for Beginners</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/jx5jmI0UlXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-description">
+                            <p>Beyond just coding, this tutorial helped me understand the design principles that make websites visually appealing and user-friendly. I've applied these principles throughout my portfolio to create a professional appearance.</p>
+                            <p><strong>Key concepts covered:</strong> Color theory, typography, visual hierarchy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer1000">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Mahamud Ali</h4>
+                    <p>Web Design & Development Student</p>
+                    <p>Saint Paul, Minnesota</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="resume.html">Resume</a></p>
+                    <p><a href="portfolio.html">Portfolio</a></p>
+                    <p><a href="videos.html">Videos</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect With Me</h4>
+                    <p>
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fa fa-github footer-icons" aria-hidden="true"></i>Follow on GitHub
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://linkedin.com/" target="_blank">
+                            <i class="fa fa-linkedin-square footer-icons" aria-hidden="true"></i>Connect on LinkedIn
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:mahamud.ali@example.com">
+                            <i class="fa fa-envelope footer-icons" aria-hidden="true"></i>Email Me
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Mahamud Ali | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--jQuery, Popper, and Bootstrap Javascript files-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

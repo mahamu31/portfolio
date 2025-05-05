@@ -1,0 +1,135 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Website Links except the nav */
+a:link{
+    color: #000000;
+}
+a:visited {
+    color: #ff6600;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: #FF00FF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #FF00FF; 
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+   list-style-type: none;
+   text-align: center;
+   margin: 8px 0;
+   padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a:link{
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: gray;
+}
+nav a:active {
+    color: lightgray;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    border-top: purple 3px solid;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+.fa{
+    font-size: 8em;
+    color: yellow;
+}
+
+.home-hero{
+    background-image:url(images/header.jpg);
+    height:475px;
+    background-size:cover;
+    background-position: center;
+    color:#042837;
+    padding: 10px 10px 10px 30px;
+}
+blockquote{
+    background-color: #FF00FF;
+    boder-left: 18px solid gray;
+    padding: 30px ;
+
+}
+img{
+    display: block;
+    margin:0 auto;
+}
+footer .fa {
+  color: #00aced;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* CSS without a media query--applies to all size unless overridden*/
+h1{
+    font-size: 4em;
+}
+
+/* Responsive Design - Tablets */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Responsive Design - Smartphones */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
